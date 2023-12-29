@@ -49,11 +49,11 @@ const Home: React.FC = () => {
       className="flex flex-col justify-center items-center min-h-screen"
     >
       <div className="w-full max-w-xs">
+        <h1 className="text-3xl flex justify-center text-green-600 font-bold pb-8">Margin: {margin.toFixed(2)}%</h1>
         <Card className="w-full">
           <CardHeader>
             <CardTitle>Risk Calculator</CardTitle>
             <CardDescription>Don't Get Rekt</CardDescription>
-            <CardDescription>Margin: {margin.toFixed(2)}%</CardDescription>
           </CardHeader>
 
           <CardContent>
@@ -96,7 +96,6 @@ const Home: React.FC = () => {
                   onChange={onChangeRisk}
                 />
               </div>
-              <button type="submit">Save</button>
             </form>
           </CardContent>
         </Card>
